@@ -2,13 +2,9 @@
 Documentation    Suite description
 Library  SeleniumLibrary
 
-*** Test Cases ***
-Test title
-    [Tags]    DEBUG
-    Provided precondition
-    When action
-    Then check expectations
-
 *** Keywords ***
-Provided precondition
-    Setup system under test
+Load
+    Go To  http://www.amazon.com
+
+Verify Page Loaded
+    Wait Until Page Contains  Your Amazon.com

@@ -2,13 +2,9 @@
 Documentation    Suite description
 Library  SeleniumLibrary
 
-*** Test Cases ***
-Test title
-    [Tags]    DEBUG
-    Provided precondition
-    When action
-    Then check expectations
 
 *** Keywords ***
-Provided precondition
-    Setup system under test
+Verify Search Completed
+    Wait Until Page Contains  "1/10 XB Series No.155 XB Ferrari 458 Challenge (TT-02 chassis)"
+Click Product Link
+    Click Link  css=#result_0 a.s-access-detail-page
