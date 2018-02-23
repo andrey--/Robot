@@ -7,6 +7,9 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
+${BROWSER} =  gc
+${START_URL} =  http://www.amazon.com
+${SEARCH_TERM} =  1/10 XB Series No.155 XB Ferrari 458 Challenge (TT-02 chassis)
 
 *** Test Cases ***
 User can search for product
